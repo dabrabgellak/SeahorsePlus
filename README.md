@@ -18,8 +18,8 @@
 ---
 
 > * [Diahan Hugdson](https:://twitter.com/diaalgo)
-  * [Daniela Chamorro](https://twitter.com/dalexach)
-  * [Barbara Calle](https://twitter.com/dabrabgellak)
+> * [Daniela Chamorro](https://twitter.com/dalexach)
+> * [Barbara Calle](https://twitter.com/dabrabgellak)
 
 ---
 
@@ -41,6 +41,7 @@
 
 ---
 
+> 
 | File Name | Description and contents |
 | --- | --- |
 | README | Explanation of repository |
@@ -59,8 +60,8 @@
 ---
 
 > * [Django](https://www.djangoproject.com/)
-  * [Python](https://www.python.org/)
-  * [HTML5](https://www.w3schools.com/html/html5_intro.asp)
-  * [css](https://www.w3schools.com/css/)
+> * [Python](https://www.python.org/)
+> * [HTML5](https://www.w3schools.com/html/html5_intro.asp)
+> * [css](https://www.w3schools.com/css/)
 
 ---
