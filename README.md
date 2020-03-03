@@ -5,12 +5,12 @@
 
 ---
 
-- [Authors](#authors)
-- [Introduction](#introduction)
-- [Description](#description)
-- [Files](#files)
-- [Usage](#Usage)
-- [Built With](#built-with)
+> - [Authors](#authors)
+> - [Introduction](#introduction)
+> - [Description](#description)
+> - [Files](#files)
+> - [Usage](#Usage)
+> - [Built With](#built-with)
 
 ---
 
@@ -41,11 +41,9 @@
 
 ---
 
-> 
-| File Name | Description and contents |
-| --- | --- |
-| README | Explanation of repository |
-|  |  |
+> | File Name | Description and contents |
+> | --- | --- |
+> | README | Explanation of repository |
 
 ---
 
