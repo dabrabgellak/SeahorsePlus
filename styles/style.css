@@ -1,0 +1,45 @@
+.title {
+  text-align: center;
+  /*padding-top: 30px;*/
+  padding-bottom: 35px;
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+row {
+  margin-left: 40%;
+  
+}
+
+button {
+  width: 150px;
+  height: 150px;
+  padding: 0 12% 0 12%;
+  /*padding: 20% 12% 0 12%;*/
+  margin: 8px 10px 8px 10px; 
+  background-repeat:no-repeat;
+  background-size: contain;
+  border: none;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  /*opacity: 0.7;*/
+}
+
+button:hover {
+  opacity: 0.4;
+  color: ghostwhite;
+}
+
+
+.img-fluid {
+  display: block;
+  height: auto;
+  max-width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
