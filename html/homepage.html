@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Bootstrap --> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Holberton School">
+    <meta name="google" content="notranslate">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../styles/navbar_style.css">
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xgz4ilr.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Seahorse Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../images/holbi-logo.png"/>  
+    <!-- Title -->
+    <title> Student dashboard | Seahorse+ </title>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" defer></script>
+  </head>
+
+  <body class="
+    signed_in 
+    env_production
+    
+    " 
+    translate="no" 
+    class="notranslate"
+    data-theme-suffix="_black"
+    data-checker-special-theme="womens_history_month">
+
+    <nav id="nav-left" class="hidden-xs title-font">
+      <a href="/">
+        <div id="holberton-logo" class="">
+          <div class="logo"></div>
+            <a class="onair_container" data-toggle="modal" data-target="#video_streams_current_modal" title="Video Streaming in   progress...">
+              <div class="onair_item">
+                <i class="fa fa-television" aria-hidden="true"></i>
+                <i class="fa fa-podcast animate-flicker" aria-hidden="true"></i>
+              </div>
+            </a>
+        </div>
+      </a>
+      <!-- Sections -->
+      <ul>       
+      <!-- STUDENT -->
+        <li>
+          <a href="/dashboards/my_planning">
+            <div class="icon"> <i class="fa fa-calendar"></i> </div>
+            Planning
+          </a>  
+        </li>
+        <li>
+          <a href="/dashboards/my_current_projects">
+            <div class="icon"> <i class="fa fa-code-fork"></i> </div>
+            Projects
+          </a>  
+        </li>
+        <li>
+          <a href="/dashboards/my_professional_track">
+            <div class="icon"> <i class="fa fa-thumbs-o-up"></i> </div>
+            Professional track
+          </a>
+        </li>
+        <li>
+          <a href="/dashboards/corrections_i_can_make">
+            <div class="icon"> <i class="fa fa-check"></i> </div>
+            QA Reviews
+          </a>  
+        </li>
+        <li>
+          <a href="/dashboards/my_current_reefineries">
+            <div class="icon"> <i class="fa fa-comments"></i> </div>
+            Mock interviews
+          </a>  
+        </li>
+
+        <hr/>
+
+        <h4>My resources</h4>
+
+        <li>
+          <a href="/dashboards/my_curriculums">
+            <div class="icon"> <i class="fa fa-graduation-cap"></i> </div>
+              Curriculums
+          </a>    
+        </li>
+        <li>
+          <a href="/dashboards/my_concepts">
+            <div class="icon"> <i class="fa fa-file-text"></i> </div>
+            Concepts
+          </a>  
+        </li>
+        <li>
+          <a href="/dashboards/my_server">
+            <div class="icon"> <i class="fa fa-server"></i> </div>
+            Servers
+          </a>  
+        </li>
+        <li>
+          <a href="/dashboards/my_containers">
+            <div class="icon"> <i class="fa fa-cloud"></i> </div>
+            Containers
+          </a>
+        </li>
+        <li>
+          <a href="/dashboards/my_tools">
+            <div class="icon"> <i class="fa fa-wrench"></i> </div>
+            Tools
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://students-support.hbtn.io/hc">
+            <div class="icon"> <i class="fa fa-graduation-cap"></i> </div>
+            School information
+          </a>  
+        </li>
+      
+        <hr/>
+
+        <h4>My campus</h4>
+        
+        <li>
+          <a href="#">
+            <div class="icon"> <i class="fa fa-music"></i> </div>
+            Seahorse+
+          </a>      
+        </li>
+        <li>
+          <a href="/dashboards/my_peers">
+            <div class="icon"> <i class="fa fa-users"></i> </div>
+            Peers
+          </a>  
+        </li>
+        <li>
+          <a href="/dashboards/my_captain_log">
+            <div class="icon"> <i class="fa fa-book"></i> </div>
+            Captain's Logs
+          </a>  
+        </li>
+        <li>
+          <a href="/dashboards/my_officers">
+            <div class="icon" style="padding-left: 2px;"> <i class="fa fa-building"></i> </div>
+            Officers
+          </a>  
+        </li>
+        <li>
+          <a href="/dashboards/my_speakers_of_the_day">
+            <div class="icon"> <i class="fa fa-microphone"></i> </div>
+            Speakers of the Day
+          </a>  
+        </li>
+  
+        <hr />
+      
+        <li>
+          <a href="/users/my_profile">
+            <div class="icon"> <i class="fa fa-user"></i> </div>
+            My Profile
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- Toggle -->
+      <nav class="navbar navbar-default navbar-main visible-xs">
+        <div class="container">
+          <div class="navbar-header mobile-nav-bar ">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+              <div id="holberton-logo">
+                <div class="logo"></div>
+              </div>
+            </a>
+            <a>
+              <div class="onair_container" data-toggle="modal" data-target="#video_streams_current_modal"  title="Video Streaming in progress...">
+                <div class="onair_item">
+                  <i class="fa fa-television" aria-hidden="true"></i>
+                  <i class="fa fa-podcast animate-flicker" aria-hidden="true"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+                 
+            <!-- STUDENT -->
+            <li>
+              <a href="/dashboards/my_planning"> Planning </a>
+            </li>
+            <li>
+              <a href="/dashboards/my_current_projects"> Projects </a>
+            </li>
+            <li>
+              <a href="/dashboards/my_professional_track"> Professional track </a>    
+            </li>
+            <li>
+              <a href="/dashboards/corrections_i_can_make"> QA Reviews </a> 
+            </li>
+            <li>
+              <a href="/dashboards/my_current_reefineries"> Mock interviews</a> 
+            </li>
+            
+            <hr />
+
+            <h4>My resources</h4>
+
+            <li>
+              <a href="/dashboards/my_curriculums"> Curriculums </a>    
+            </li>
+            <li>
+              <a href="/dashboards/my_concepts"> Concepts </a>
+            </li>
+            <li>
+              <a href="/dashboards/my_server"> Servers </a>
+            </li>
+            <li>
+              <a href="/dashboards/my_containers"> Containers </a>  
+            </li>
+            <li>
+              <a href="/dashboards/my_tools"> Tools </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://students-support.hbtn.io/hc"> School information </a> 
+            </li>
+
+            <hr />
+
+            <h4>My campus</h4>
+
+            <li>
+              <a href="#"> Seahorse+ </a>              
+            </li>
+            <li>
+              <a href="/dashboards/my_peers"> Peers </a> 
+            </li>
+            <li>
+              <a href="/dashboards/my_captain_log"> Captain's Logs </a>  
+            </li>
+            <li>
+              <a href="/dashboards/my_officers"> Officers </a>  
+            </li>
+            <li>
+              <a href="/dashboards/my_speakers_of_the_day"> Speakers of the Day </a>  
+            </li>
+  
+            <hr />
+            
+            <li>
+              <a href="/users/my_profile"> My Profile </a>
+            </li>
+          </ul>
+
+          </div> <!--/.nav-collapse -->
+        </div>
+      </nav>
+      <!-- Seahorse+ -->
+      <!-- Header -->
+      <header>
+        <img class="img-fluid " src="../images/sea-logo.jpg" alt="Logo">
+        <!-- <h1 class="title"> Seahorse+ </h1> -->
+      </header>
+  
+      <h3 class="title"> Music </h3>
+  
+      <h4 class="title"> Genres </h4>
+      
+      <div class="container">
+        
+        <!-- <div class="row">
+        </div> -->
+        
+        <div class="row">
+          <a href="template_genre.html?rock"><button class="rock" id="rock" style="background-image: url(../images/rock.jpg);"> Rock</button></a>
+          <a href="template_genre.html?jazz"><button class="jazz" id="jazz" style="background-image: url(../images/jazz.jpeg);"> Jazz </button></a>
+          <a href="template_genre.html?electronic"><button class="electronic" style="background-image: url(../images/elect.jpg);"> Electronic </button></a>          
+        </div>
+        
+        <div class="row">
+          <a href="template_genre.html?hiphop"><button class="hiphop" id="hiphop" style="background-image: url(../images/hip_hop.jpg);"> Hip-Hop </button></a>
+          <a href="template_genre.html?reggae"><button class="reggae" id="reggae" style="background-image: url(../images/reggae.jpeg);"> Reggae </button></a>
+          <a href="template_genre.html?80"><button class="80" id="80" style="background-image: url(../images/80.jpg);"> 80s </button></a>
+        </div>
+        
+        <div class="row">
+          <a href="template_genre.html?indie"><button class="indie" id="indie" style="background-image: url(../images/indie.jpg);"> Indie </button></a>
+          <a href="template_genre.html?british"><button class="british" id="british" style="background-image: url(../images/british.jpeg);"> British </button></a>
+          <a href="template_genre.html?dance"><button class="dance" id="dance" style="background-image: url(../images/dance.png);"> Dance </button></a>
+          <a href="template_genre.html?metal"><button class="metal" id="metal" style="background-image: url(../images/metal.jpeg);"> Metal </button></a>
+        </div>
+        
+        <div class="row">
+          <a href="template_genre.html?acoustic"><button class="acoustic" id="acoustic" style="background-image: url(../images/acoustical.png);"> Acoustic </button></a>
+          <a href="template_genre.html?county"><button class="country" id="country" style="background-image: url(../images/country.jpeg);"> Country </button></a>
+          <a href="template_genre.html?classical"><button class="classical" id="classical" style="background-image: url(../images/vivaldi.jpg);"> Classical </button></a>
+          <a href="template_genre.html?punk"><button class="punk" id="punk" style="background-image: url(../images/punk.jpg);"> Punk </button></a>
+        </div>
+        
+        <div class="row">
+          <a href="template_genre.html?rnb"><button class="rnb" id="rnb" style="background-image: url(../images/rnb.jpeg);"> Rnb </button></a>
+          <a href="template_genre.html?blues"><button class="blues" id="blues" style="background-image: url(../images/blues.jpg);"> Blues </button></a>
+          <a href="template_genre.html?rap"><button class="rap" id="rap" style="background-image: url(../images/rap.jpeg);"> Rap </button></a>
+        </div>
+        
+        <div class="row">
+          <a href="template_genre.html?hardcore"><button class="hardcore" id="hardcore" style="background-image: url(../images/hardcore.jpg);"> Hardcore </button></a>
+          <a href="template_genre.html?alternative"><button class="alternative" id="alternative" style="background-image: url(../images/altaer.jpg);"> Alternative </button></a>
+          <a href="template_genre.html?pop"><button class="pop" style="background-image: url(../images/pop.jpeg);"> Pop </button></a>
+          
+        </div>
+        
+        <!-- <div class="row">
+        </div> -->
+        
+      </div>
+
+      <!-- Audio player -->
+      <div id="player" data-search-active="false" data-toggle="modal" data-target="#search-modal">
+        <figure>
+          <audio id="audio-player" controls></audio>
+        </figure>
+      </div>
+
+      <footer>
+        <div class="copyright">Copyright &copy; 2020 Holberton School. All rights reserved.</div>
+      </footer>
+    
+      <div id="search-button" data-search-active="false" data-toggle="modal" data-target="#search-modal">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <i class="fa fa-window-minimize" aria-hidden="true"></i>
+      </div>
+ </body>
+</html>
