@@ -17,6 +17,7 @@ function print_data_Albums(data){
     const album = data.albums.album[d];
     const struct = [
     '<div class="container">',
+    '<a href = template_album.html',
     '<div class="imag">',
     '<img src="',album.image[2]['#text'],'"></img>',
     '</div>',
@@ -28,6 +29,7 @@ function print_data_Albums(data){
     album.artist.name,
     '</h4>',
     '</div>',
+    '</a>',
     '</div>'    
     ];
     console.log(struct.join(''));

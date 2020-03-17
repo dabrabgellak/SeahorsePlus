@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+	  <meta charset="utf-8">
     <!-- Bootstrap --> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,10 +19,12 @@
     <link rel="shortcut icon" type="image/x-icon" href="../images/holbi-logo.png"/>  
     <!-- Title -->
     <title> Student dashboard | Seahorse+ </title>
-    <!-- JQuery -->
+	  <!-- Seahorses need --> 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" defer></script>
+    <script type="text/javascript" src="../scripts/script_album.js.js" defer></script>
+    <link rel="stylesheet" href="../styles/style_genre.css">
+    <link href="https://fonts.googleapis.com/css?family=Bellota+Text&display=swap" rel="stylesheet">
   </head>
-
   <body class="
     signed_in 
     env_production
@@ -32,7 +34,6 @@
     class="notranslate"
     data-theme-suffix="_black"
     data-checker-special-theme="womens_history_month">
-
     <nav id="nav-left" class="hidden-xs title-font">
       <a href="/">
         <div id="holberton-logo" class="">
@@ -238,7 +239,12 @@
             <hr />
 
             <h4>My campus</h4>
-
+            <li>
+              <a href="/html/homepage.html">
+                <div class="icon"> <i class="fa fa-music"></i> </div>
+                Seahorse+
+              </a>      
+            </li>
             <li>
               <a href="/html/homepage.html"> Seahorse+ </a>              
             </li>
@@ -271,74 +277,29 @@
         <img class="img-fluid " src="../images/sea-logo.jpg" alt="Logo">
         <!-- <h1 class="title"> Seahorse+ </h1> -->
       </header>
-  
-      <h3 class="title"> Music </h3>
-  
-      <h4 class="title"> Genres </h4>
+		<h1>Tracklist</h1>
+		<section class="Tracks">
       
-      <div class="container">
-        
-        <!-- <div class="row">
-        </div> -->
-        
-        <div class="row">
-          <a href="template_genre.html?rock"><button class="rock" id="rock" style="background-image: url(../images/rock.jpg);"> Rock</button></a>
-          <a href="template_genre.html?jazz"><button class="jazz" id="jazz" style="background-image: url(../images/jazz.jpeg);"> Jazz </button></a>
-          <a href="template_genre.html?electronic"><button class="electronic" style="background-image: url(../images/elect.jpg);"> Electronic </button></a>          
-        </div>
-        
-        <div class="row">
-          <a href="template_genre.html?hiphop"><button class="hiphop" id="hiphop" style="background-image: url(../images/hip_hop.jpg);"> Hip-Hop </button></a>
-          <a href="template_genre.html?reggae"><button class="reggae" id="reggae" style="background-image: url(../images/reggae.jpeg);"> Reggae </button></a>
-          <a href="template_genre.html?80"><button class="80" id="80" style="background-image: url(../images/80.jpg);"> 80s </button></a>
-        </div>
-        
-        <div class="row">
-          <a href="template_genre.html?indie"><button class="indie" id="indie" style="background-image: url(../images/indie.jpg);"> Indie </button></a>
-          <a href="template_genre.html?british"><button class="british" id="british" style="background-image: url(../images/british.jpeg);"> British </button></a>
-          <a href="template_genre.html?dance"><button class="dance" id="dance" style="background-image: url(../images/dance.png);"> Dance </button></a>
-          <a href="template_genre.html?metal"><button class="metal" id="metal" style="background-image: url(../images/metal.jpeg);"> Metal </button></a>
-        </div>
-        
-        <div class="row">
-          <a href="template_genre.html?acoustic"><button class="acoustic" id="acoustic" style="background-image: url(../images/acoustical.png);"> Acoustic </button></a>
-          <a href="template_genre.html?county"><button class="country" id="country" style="background-image: url(../images/country.jpeg);"> Country </button></a>
-          <a href="template_genre.html?classical"><button class="classical" id="classical" style="background-image: url(../images/vivaldi.jpg);"> Classical </button></a>
-          <a href="template_genre.html?punk"><button class="punk" id="punk" style="background-image: url(../images/punk.jpg);"> Punk </button></a>
-        </div>
-        
-        <div class="row">
-          <a href="template_genre.html?rnb"><button class="rnb" id="rnb" style="background-image: url(../images/rnb.jpeg);"> Rnb </button></a>
-          <a href="template_genre.html?blues"><button class="blues" id="blues" style="background-image: url(../images/blues.jpg);"> Blues </button></a>
-          <a href="template_genre.html?rap"><button class="rap" id="rap" style="background-image: url(../images/rap.jpeg);"> Rap </button></a>
-        </div>
-        
-        <div class="row">
-          <a href="template_genre.html?hardcore"><button class="hardcore" id="hardcore" style="background-image: url(../images/hardcore.jpg);"> Hardcore </button></a>
-          <a href="template_genre.html?alternative"><button class="alternative" id="alternative" style="background-image: url(../images/altaer.jpg);"> Alternative </button></a>
-          <a href="template_genre.html?pop"><button class="pop" style="background-image: url(../images/pop.jpeg);"> Pop </button></a>
-          
-        </div>
-        
-        <!-- <div class="row">
-        </div> -->
-        
-      </div>
+		</section>
+		<!-- <h1>Artist</h1>
+		<section class="Artist">
+      
+		</section> -->
 
-      <!-- Audio player -->
-      <div id="player" data-search-active="false" data-toggle="modal" data-target="#search-modal">
-        <figure>
-          <audio id="audio-player" controls></audio>
-        </figure>
-      </div>
+    <!-- Audio player -->
+    <div id="player" data-search-active="false" data-toggle="modal" data-target="#search-modal">
+      <figure>
+        <audio id="audio-player" controls></audio>
+      </figure>
+    </div>  
 
-      <footer>
-        <div class="copyright">Copyright &copy; 2020 Holberton School. All rights reserved.</div>
-      </footer>
+    <footer>
+      <div class="copyright">Copyright &copy; 2020 Holberton School. All rights reserved.</div>
+    </footer>
     
       <div id="search-button" data-search-active="false" data-toggle="modal" data-target="#search-modal">
         <i class="fa fa-search" aria-hidden="true"></i>
         <i class="fa fa-window-minimize" aria-hidden="true"></i>
       </div>
- </body>
+  </body>
 </html>
