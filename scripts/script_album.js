@@ -1,7 +1,7 @@
 const params = window.location.search.substr(1);
-artist, album = params.split('&')
+artist, album = params.split('&');
 
-const req_url = 'https://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=a8c031c3b6f2b093bd851d1e525234d2&artist='+artist+'&album='+album+'&format=json'
+const req_url = 'https://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=a8c031c3b6f2b093bd851d1e525234d2&artist='+artist+'&album='+album+'&format=json';
 $.ajax({
     url: req_url,
     type: 'GET',
