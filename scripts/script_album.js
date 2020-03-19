@@ -1,5 +1,7 @@
 const params = window.location.search.substr(1);
-let artist, album = params.split("&"); 
+let all = params.split("/"); 
+let artist = all[0].replace("+","%20");
+let album = all[1].replace("+","%20");
 console.log(artist);
 
 const req_url = 'https://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=a8c031c3b6f2b093bd851d1e525234d2&artist='+artist+'&album='+album+'&format=json';
@@ -7,7 +9,7 @@ $.ajax({
     url: req_url,
     type: 'GET',
     success: function (data) {
-        print_data_track();
+        print_data_track(data);
     },
     error: function (data) {
         console.log(data);
