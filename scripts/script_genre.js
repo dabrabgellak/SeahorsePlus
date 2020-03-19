@@ -14,10 +14,15 @@ $.ajax({
 
 function print_data_Albums(data){
   for (const d in data.albums.album) {
+    let art_name, album_name;
     const album = data.albums.album[d];
+    art_name = album.artist.name;
+    album_name = album.name;
+    art_name =  art_name.replace(/\s/g, '+');
+    album_name = album_name.replace(/\s/g, '+');
     const struct = [
     '<div class="container">',
-    '<a href=template_album.html?',album.name,'&',album.artist.name,'>',
+    '<a href=template_album.html?',art_name,'/',album_name,'>',
     '<div class="imag">',
     '<img src="',album.image[2]['#text'],'"></img>',
     '</div>',
