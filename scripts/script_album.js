@@ -17,8 +17,8 @@ $.ajax({
 });
 
 function print_data_track(data){
-    for (const i in data.tracks.track){
-        const track = data.tracks.track[i];
+    for (const i in data.album.tracks.track){
+        const track = data.album.tracks.track[i];
         const struct = [
         '<h3>',
         track.name,
