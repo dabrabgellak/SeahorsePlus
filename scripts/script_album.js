@@ -1,7 +1,7 @@
 const params = window.location.search.substr(1);
 let all = params.split("/"); 
-let artist = all[0].replace("+","%20");
-let album = all[1].replace("+","%20");
+let artist = all[0];
+let album = all[1];
 let urltracks = [];
 let ytracks = [];
 
@@ -29,8 +29,9 @@ function print_data_track(data){
         urltracks.push(track.url);
         $('.Tracks').append($(struct.join('')));
        }
-       console.log(urltracks);
-       if (album === "In%20Between%20Dreams" and artist === "Jack%20Johnson") {
+       console.log(album);
+       console.log(artist);
+       if (album === "In+Between+Dreams" && artist === "Jack+Johnson") {
            const frame = [
        '<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLi_9g3NzCdCbpkWmXLPehKMina4nFpfq-" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
         ];
