@@ -6,15 +6,15 @@ h1 {
   margin: 30px;
 }
 
-.Tracks {
+.container .Tracks {
   margin: 40px;
 }
 
-.Tracks h3 {
+.container .Tracks h3 {
   margin-top: 5px;
   margin-bottom: 0px;
 }
 
-.yplayer {
+.container .yplayer {
  margin: 50px;
 }
