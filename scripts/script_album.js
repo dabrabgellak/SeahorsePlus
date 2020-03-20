@@ -29,14 +29,20 @@ function print_data_track(data){
         urltracks.push(track.url);
         $('.Tracks').append($(struct.join('')));
        }
-       console.log(album);
-       console.log(artist);
        if (album === "In+Between+Dreams" && artist === "Jack+Johnson") {
            const frame = [
        '<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLi_9g3NzCdCbpkWmXLPehKMina4nFpfq-" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
         ];
         $('.yplayer').append($(frame.join('')));
        }
+       
+       if (album === "All+The+Right+Reasons" && artist === "Nickelback") {
+           const frame = [
+       '<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLL4fdl7j_SiiIOpVejeFtbljQfl1qztIi" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+        ];
+        $('.yplayer').append($(frame.join('')));
+       }
+       
     }
     
 function get_songs(){

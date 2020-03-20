@@ -2,6 +2,10 @@ h1, h2, h3, h4 {
   font-family: 'Bellota Text', cursive;
 }
 
+h1 {
+  margin: 30px;
+}
+
 .Tracks {
   margin: 40px;
 }
@@ -9,4 +13,8 @@ h1, h2, h3, h4 {
 .Tracks h3 {
   margin-top: 5px;
   margin-bottom: 0px;
+}
+
+.yplayer {
+ margin: 50px;
 }
