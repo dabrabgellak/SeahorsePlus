@@ -19,6 +19,24 @@ $.ajax({
 });
 
 function print_data_track(data){
+    if (album === "In%20Between%20Dreams" and artist === "Jack%20Johnson") {
+        for (const i in data.album.tracks.track){
+        const track = data.album.tracks.track[i];
+        const struct = [
+        '<h3>',
+        track.name,
+        '</h3>'
+        ];
+        urltracks.push(track.url);
+        $('.Tracks').append($(struct.join('')));
+       }
+       const frame = [
+       '<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLi_9g3NzCdCbpkWmXLPehKMina4nFpfq-" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+        ]
+        $('.yplayer').append($(frame.join('')));
+       console.log(urltracks);
+    }
+    else {
     for (const i in data.album.tracks.track){
         const track = data.album.tracks.track[i];
         const struct = [
@@ -30,7 +48,7 @@ function print_data_track(data){
         $('.Tracks').append($(struct.join('')));
        }
        console.log(urltracks);
-       get_songs();
+    }
     }
     
 function get_songs(){
