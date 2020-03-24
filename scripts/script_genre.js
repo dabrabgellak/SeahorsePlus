@@ -1,8 +1,18 @@
+/*
+ * This script receibes the parameters sending throught the URL
+ * genre: Genre that we receibed by the URL
+ * */
 const genre = window.location.search.substr(1);
 
-const rurl = 'https://ws.audioscrobbler.com/2.0/?method=tag.gettopalbums&tag='+genre+'&api_key=a8c031c3b6f2b093bd851d1e525234d2&format=json';
+/*
+ * Request to get the albums from a genre
+ * req_url: URL that contains the genre get the albums of that genre, you must to send the arguments genre and 
+ * also the API key
+ * It receibes the data that the API sends and we send it throght a function to print it. 
+ * */
+ const req_url = 'https://ws.audioscrobbler.com/2.0/?method=tag.gettopalbums&tag='+genre+'&api_key=a8c031c3b6f2b093bd851d1e525234d2&format=json';
 $.ajax({
-  url: rurl,
+  url: req_url,
   type: 'GET',
   success: function (data) {
       print_data_Albums(data);
@@ -12,6 +22,11 @@ $.ajax({
     }
   });
 
+
+/*
+ * print_data_Albums: Function that receibes the data of the request and print the Albums that the genre contains
+ * We search the album througt the data and only gets one album and put it dynamically in the class that contains it in the HTML
+ * */
 function print_data_Albums(data){
   for (const d in data.albums.album) {
     let art_name, album_name;
@@ -43,9 +58,15 @@ function print_data_Albums(data){
    }
 }
 
-const rurlartist = 'https://ws.audioscrobbler.com/2.0/?method=tag.gettopartists&tag='+genre+'&api_key=a8c031c3b6f2b093bd851d1e525234d2&format=json';
+/*
+ * Request to get the artist from a genre
+ * req_urlartist: URL that contains the genre and get the artist of that genre, you must to send the arguments genre and 
+ * also the API key
+ * It receibes the data that the API sends and we send it throght a function to print it. 
+ * */
+const req_urlartist = 'https://ws.audioscrobbler.com/2.0/?method=tag.gettopartists&tag='+genre+'&api_key=a8c031c3b6f2b093bd851d1e525234d2&format=json';
 $.ajax({
-  url: rurlartist,
+  url: req_urlartist,
   type: 'GET',
   success: function (data) {
       console.log(data);
@@ -56,6 +77,11 @@ $.ajax({
     }
   });
 
+
+/*
+ * print_data_Albums: Function that receibes the data of the request and print the artist that the genre contains
+ * We search the track througt the data and only gets one track and put it dynamically in the class that contains it in the HTML
+ * */
 function print_data_Artist(data){
   for (const d in data.topartists.artist) {
     const artist = data.topartists.artist[d];
