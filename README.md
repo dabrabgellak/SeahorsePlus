@@ -35,9 +35,8 @@
 
 ## Page
 
-``
   [dalexa.tech](http://dalexach.tech/homepage.html)
-``
+
 
 ## Built With
 
