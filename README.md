@@ -28,9 +28,7 @@
 
 ## Page
 
-``
   dalexa.tech
-``
 
 ## Built With
 
