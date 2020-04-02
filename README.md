@@ -18,7 +18,7 @@
  The history of our project and how we face it:
  - [SEAHORSE PLUS: BEYOND THE MUSIC](https://medium.com/@carollhudgson/seahorse-plus-beyond-the-music-868e8f8451b2)
  - [A project with music](https://www.linkedin.com/pulse/project-withmusic-daniela-alexandra-chamorro-guerrero/?trackingId=%2Fhuz0gk6iCNbjcf8fy5TKA%3D%3D)
- - []()
+ - [Seahorse+](https://medium.com/@arabellak/seahorse-5f29a818933()
 
 ## Description
  Seahorse+ is a section for the Holberton intranet with music for all the students to enjoy.
